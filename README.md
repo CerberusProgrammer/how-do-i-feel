@@ -4,6 +4,8 @@
 
 "How Do I Feel?" is a client-side sentiment analysis application that provides real-time emotional tone detection in written text. The application leverages rule-based natural language processing techniques to analyze and categorize text into various sentiment dimensions.
 
+![{49A23536-734A-4497-B3F3-ECB544D0B405}](https://github.com/user-attachments/assets/bca5bf41-56bf-4e92-9273-a857a635830b)
+
 ## Architecture
 
 ### Frontend Architecture
