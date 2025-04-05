@@ -1,28 +1,33 @@
 export type Sentiment =
-  // Sentimientos positivos
-  | "happiness"
-  | "love"
-  | "gratitude"
+  // Positive sentiments
+  | "satisfaction"
+  | "appreciation"
+  | "confidence"
+  | "enthusiasm"
   | "optimism"
   | "relief"
   | "pride"
-  | "amusement"
-  | "sadness"
-  | "anger"
-  | "fear"
-  | "disgust"
-  | "anxiety"
+  // Negative sentiments
   | "disappointment"
+  | "frustration"
+  | "concern"
+  | "anxiety"
+  | "dissatisfaction"
   | "confusion"
-  | "surprise"
-  | "embarrassment"
-  | "guilt"
-  | "neutral"
-  | "contemplative"
-  | "nostalgia"
+  | "overwhelm"
+  // Neutral/professional sentiments
+  | "neutrality"
+  | "urgency"
+  | "formality"
+  | "inquiry"
+  | "consideration"
+  | "assertiveness"
   | "determination";
 
 export interface SentimentAnalysis {
   sentiment: Sentiment;
   score: number;
+  category?: string; // Optional category from SENTIMENT_CATEGORIES
+  context?: string[]; // Optional contexts where this sentiment appears
+  intensity?: "low" | "medium" | "high";
 }
